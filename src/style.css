@@ -44,11 +44,11 @@ h1 {
     width: 75%;
     height: 62%;
     background-color: #1A1A1A;
-    padding: 10px;
+    padding: 30px;
     border-radius: 40px;
     box-sizing: border-box;
     flex-direction: column;
-    overflow-y: auto;   
+    overflow-y: scroll; 
 }
 
 .divInfos .divProjects {
@@ -61,7 +61,7 @@ h1 {
 
 .project {
     
-    width: 80%;
+    width: 75%;
     height: 100px;
     padding: 10px;
     cursor: pointer;
@@ -127,7 +127,7 @@ article p {
     font-weight: 400;
     font-style: normal;
     color: rgb(168, 168, 168);
-    font-size: 20px;
+    font-size: 19px;
     padding: 10px;
 }
 
@@ -156,18 +156,24 @@ hr {
 }
 .langs {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
    margin-top: 4em;
+   font-family: "Inter", sans-serif;
+   color: #414141;
 }
 .langs img {
     padding-inline: 5px;
     width: 35px;
 }
-.langs div:hover{
+.langs .divLangs div:hover{
 padding: 1px;
  background-color: #232323
 }
-
+.divLangs{
+    display: flex;
+}
 /* Scroll */
 
 /* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
