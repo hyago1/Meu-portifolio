@@ -52,7 +52,7 @@ h1 {
 }
 
 .divInfos .divProjects {
-  margin-top: 5px;
+    position: relative;
     display: grid;
     grid-template-columns: auto auto auto;
 
@@ -174,6 +174,8 @@ padding: 1px;
 .divLangs{
     display: flex;
 }
+
+
 /* Scroll */
 
 /* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
@@ -212,4 +214,12 @@ padding: 1px;
   *::-webkit-scrollbar-thumb:active {
     background-color: #293744;
   }
+  .divInfos::-webkit-scrollbar {
+    display: none;
+  }
   
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .divInfos {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
